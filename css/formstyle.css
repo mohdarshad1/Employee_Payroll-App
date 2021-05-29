@@ -24,6 +24,13 @@ body {
     border: 0px solid green;
 }
 
+error-output {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    margin-left: 5px;
+}
+
 .logo-content-img {
     border: 0px solid #42515f;
 }
