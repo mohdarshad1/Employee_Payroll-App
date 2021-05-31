@@ -1,21 +1,21 @@
 class EmployeePayroll {
 
-    constructor(...params) {
-        this.name = params[0];
-        this.picture = params[1];
-        this.gender = params[2];
-        this.department = params[3];
-        this.salary = params[4];
-        this.startDate = params[5];
-        this.notes = params[6];
+    get id() {
+        return this.id;
+    }
+    set id(id) {
+        this.id = id;
     }
 
     get name() {
         return this._name;
     }
-
     set name(name) {
-        this._name = name;
+        let nameRegex = /[A-Z][a-z]{2,}/;
+        if (nameRegex.test(name))
+            this._name = name;
+        else
+            throw "Invalid Name";
     }
 
     get picture() {
@@ -54,7 +54,7 @@ class EmployeePayroll {
     }
 
     set startDate(startDate) {
-        this._startDate = startDate;
+        this._startDate = startDate
     }
 
     get notes() {
@@ -63,5 +63,11 @@ class EmployeePayroll {
 
     set notes(notes) {
         this._notes = notes;
+    }
+
+    toString() {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const empDate = !this.startDate ? "undefined" : this.startDate.toLocaleDateString("en-US", options);
+        return "id = " + this.id + ", name = " + this.name + ", gender = " + this.gender + ", profile picture = " + this.profilePic + ", department = " + this.department + ", salary = " + this.salary + ", startDate = " + this.startDate + ", note = " + this.note;
     }
 }
