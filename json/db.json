@@ -37,15 +37,16 @@
       "_profileUrl": "../assets/profile-images/Ellipse -4.png"
     },
     {
-      "_name": "Rani Singh",
-      "_gender": "female",
+      "_name": "Raghav Singh",
+      "_gender": "Male",
       "_department": [
+        "Sales",
         "HR"
       ],
       "_salary": "30000",
       "_startDate": "1 Jan 2020",
       "_notes": "",
-      "_profileUrl": "../assets/profile-images/Ellipse -4.png",
+      "_picture": "../assets/profile-images/Ellipse -4.png",
       "id": 4
     }
   ]
