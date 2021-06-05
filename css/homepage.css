@@ -1,14 +1,14 @@
-html body {
+html body{
     margin: 0;
     height: 100%;
 }
 
-.header {
+.header{
     padding: 15px 0;
     background-color: #ffffff;
 }
 
-.header-content {
+.header-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -16,7 +16,7 @@ html body {
     border: 0px solid green;
 }
 
-.logo-content {
+.logo-content{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,28 +24,23 @@ html body {
     width: 80%;
 }
 
-.logo-content-img {
+.logo-content-img{
     border: solid 0px #42515f;
 }
 
-.emp-text {
+.emp-text{
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
     color: #82a70c;
     text-transform: capitalize;
-    padding-left: 5px;
 }
 
-.emp-payroll {
-    color: #42515f;
-}
+.emp-payroll{color: #42515f;}
 
-* {
-    box-sizing: border-box;
-}
+*{box-sizing: border-box;}
 
-.main-content {
+.main-content{
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 80px);
@@ -54,7 +49,7 @@ html body {
     box-sizing: border-box;
 }
 
-.header-content {
+.header-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,14 +59,14 @@ html body {
     padding-bottom: 25px;
 }
 
-.emp-detail-text {
+.emp-detail-text{
     font: normal normal bold 24px/25px Roboto;
     letter-spacing: 0px;
     color: #42515f;
     opacity: 1;
 }
 
-.emp-count {
+.emp-count{
     background-color: #82a70c;
     color: #ffffff;
     border-radius: 42%;
@@ -81,7 +76,7 @@ html body {
     display: inline-block;
 }
 
-.add-button {
+.add-button{
     font: normal normal normal 22px/29px Roboto;
     letter-spacing: 0px;
     color: #ffffff;
@@ -95,35 +90,33 @@ html body {
     text-decoration: none;
 }
 
-.table-main {
+.table-main{
     width: 80%;
     margin: 0 auto;
     overflow: auto;
 }
 
-.table {
+.table{
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 15px;
     min-width: 800px;
 }
 
-td,
-th {
+td, th{
     text-align: left;
     padding: 5px 8px;
 }
 
-th {
+th{
     background: #42515f 0% 0% no-repeat padding-box;
-    text-align: left;
+    border-radius: 3px 3px 0px 0px;
     font: normal normal medium 18px/24px Roboto;
     letter-spacing: 0px;
     color: #ffffff;
     text-transform: uppercase;
     opacity: 1;
     border: 0px solid #dddddd;
-    height: 50px;
 }
 
 tr:not(:first-child) {
@@ -131,27 +124,27 @@ tr:not(:first-child) {
     border: 1px solid #e3e3e3;
     border-radius: 3px;
 }
-
+  
 td {
-    font: normal normal normal 14px/21px Roboto;
-    letter-spacing: 0px;
-    color: #3d3d3d;
-    opacity: 1;
+  font: normal normal normal 14px/21px Roboto;
+  letter-spacing: 0;
+  color: #3d3d3d;
+  opacity: 1;
 }
 
 td:first-child {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 td img:first-child {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 td img {
-    cursor: pointer;
+  cursor: pointer;
 }
-
+  
 .dept-label {
     background-color: #e9fea5;
     border-radius: 40%;
@@ -162,19 +155,4 @@ td img {
     display: inline-block;
     font-weight: 300;
     margin-bottom: 8px;
-}
-
-@media only screen and (max-width: 460px) {
-    .emp-detail-text {
-        font-size: 15px;
-    }
-    .add-button {
-        font-size: 11px;
-        padding: 1px 5px 0px 5px;
-        margin-right: 5px;
-    }
-    .add-button>img {
-        padding-top: 3px;
-        padding-right: 0px;
-    }
-}
+  }
